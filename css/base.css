@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+html,body {
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-family:  'Lato', serif;
+    line-height: 1.6;
+    height: 100%; 
+    display: flex;
+    flex-direction: column; 
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* Header Styling */
+header {
+    width: 100%;
+    background-color: #070F2B;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+
+/* Left Section */
+.left-section {
+    flex: 1;
+    text-align: left;
+}
+
+.left-section a {
+    text-decoration: none;
+    color: white;
+    font: italic 1rem "Arial", serif;
+    transition: color 0.3s ease;
+}
+
+.left-section a:hover {
+    color: #9290C3;
+}
+
+/* Center Section */
+.center-section {
+    flex: 1;
+    text-align: center;
+}
+.center-section a{
+    text-decoration: none;
+    color: white;
+    font: 2.5rem "Lato", serif;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.center-section a:hover {
+    color: #9290C3; 
+}
+
+.center-section h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: white;
+}
+
+/* Right Section */
+.right-section {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.right-section nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.right-section img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+h4 {
+    color: white;
+    font: italic 1rem "Arial", serif;
+}
+
+main {
+    flex: 1; 
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #9290C3;
+    color: white;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    position: relative;
+}
+
+/* scroll-bar */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; 
+    }
+
+    header {
+        flex-direction: column; 
+        align-items: center;
+        padding: 10px; 
+    }
+
+    .header-container {
+        flex-direction: column; 
+        gap: 15px;
+    }
+
+    .center-section h1 {
+        font-size: 1.8rem;
+    }
+
+    footer {
+        font-size: 12px; 
+        padding: 10px;
+    }
+    .columns {
+        flex-direction: column; 
+    }
+    .sidebar {
+        width: 100%;
+    }
+    
+    .product-grid {
+        width: 100%; 
+    }
+}
+

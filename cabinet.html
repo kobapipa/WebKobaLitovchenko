@@ -3,36 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cabinet</title>
+    <title>Basket</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
     <header>
-        <h1>Personal Cabinet</h1>
-        <img src="img/IMG_3027.JPG" alt="Profile Picture" width="32" height="32">
-        <nav>
-            <a href="index.html">Go to Litko Home</a>
-        </nav>
+        <div class="header-container">
+            <div class="left-section">
+                <a href="catalog.html">Men's and Women's Fragrances</a>
+            </div>
+            <div class="center-section">
+                <a href="index.html">LITKO</a>
+            </div>
+            <div class="right-section">
+                <nav>
+                    <a href="cabinet.html">
+                        <img src="img/cab.png" alt="Cabinet">
+                    </a>
+                    <a href="basket.html">
+                        <img src="img/basket.png" alt="Basket">
+                    </a>
+                </nav>
+            </div>
+        </div>
     </header>
     
     <main>
-        <h2>User Information</h2>
-        <ul>
-            <li>Phone</li>
-            <li>Email</li>
-            <li>
-                Full Name
-                <ul>
-                    <li>Last Name</li>
-                    <li>First Name</li>
-                </ul>
-            </li>
-            <li>Credit Card</li>
-        </ul>
+        
+        <form class="order-form">
+            <h2>Checkout Form</h2>
+            
+            
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Quentin Tarantino" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="sobaka@gmail.com" required>
+            
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="+38(097)999-99-99" required pattern="[0-9]{10}">
+            
+            
+            <div class="card-form-container">
+                <div class="form-group">
+                    <label for="card-number">Card Number:</label>
+                    <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" required>
+                </div>
+                <div class="form-group">
+                    <label for="cardholder-name">Cardholder Name:</label>
+                    <input type="text" id="cardholder-name" name="cardholder-name" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label for="expiration-date">Expiration Date:</label>
+                    <input type="month" id="expiration-date" name="expiration-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="123" required>
+                </div>
+            </div>
+            
+            
+            <button type="submit" class="submit-btn">Submit</button>
+        </form> 
     </main>
 
-    <footer> 
-        <p>If you have any questions, contact us:</p>
+    <footer>
+        <p>If you have some questions, contact us</p>
         <h4>999-999-999</h4>
     </footer>
 </body>
